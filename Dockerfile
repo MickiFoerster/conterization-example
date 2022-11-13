@@ -1,7 +1,9 @@
 FROM rust:1.65 as builder
-WORKDIR /asdf
+
+WORKDIR /workdir
 COPY app .
 RUN cargo install --path .
+RUN cargo clean
 
 ################################
 FROM debian:stable-slim

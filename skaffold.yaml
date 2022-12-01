@@ -1,0 +1,8 @@
+apiVersion: skaffold/v4beta1
+kind: Config
+build:
+  artifacts:
+  - image: conterization-example
+manifests:
+  rawYaml:
+  - k8s-pod.yaml

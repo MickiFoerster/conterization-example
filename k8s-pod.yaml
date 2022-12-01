@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: conterization-example
+spec:
+  containers:
+  - name: conterization-example 
+    image: conterization-example
+
